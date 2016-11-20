@@ -1,0 +1,1 @@
+a module that allows you to use namespaced code in Magento 1.x

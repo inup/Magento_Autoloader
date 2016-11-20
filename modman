@@ -1,0 +1,3 @@
+#Inup_Autoloader
+app/code/community/Inup/Autoloader
+app/etc/modules/Inup_Autoloader.xml

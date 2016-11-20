@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<global>
+		<models>
+			<inup_autoloader>
+				<class>Inup_Autoloader_Model</class>
+			</inup_autoloader>
+		</models>
+		<events>
+			<controller_front_init_before>
+				<observers>
+					<inup_autoloader>
+						<class>inup_autoloader/autoloader</class>
+						<method>addAutoloader</method>
+					</inup_autoloader>
+				</observers>
+			</controller_front_init_before>
+			<default>
+				<observers>
+					<inup_autoloader_cron>
+						<class>inup_autoloader/autoloader</class>
+						<method>addAutoloader</method>
+					</inup_autoloader_cron>
+				</observers>
+			</default>
+		</events>
+	</global>
+</config>
